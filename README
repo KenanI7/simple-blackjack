@@ -35,4 +35,5 @@ The dealer (computer) will also draw cards until their hand value reaches 17 or 
 If the player's hand value exceeds 21, they bust and lose the game.
 If the dealer's hand value exceeds 21, they bust and the player wins the game.
 If neither the player nor the dealer busts, the one with the higher hand value wins. A tie is also possible.
+
 ```
