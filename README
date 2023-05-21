@@ -1,0 +1,38 @@
+# SIMPLE Blackjack Game
+
+This is a simple command-line implementation of the Blackjack card game.
+
+## Files
+
+- `main.cpp`: The main program that runs the Blackjack game.
+- `blackjack.h`: Header file containing the constants and the `Card` struct definition.
+- `score.cpp`: Source file containing the implementation of the `calculateScore` function.
+- `score.h`: Header file declaring the `calculateScore` function.
+- `cards.cpp`: Source file containing the implementation of the `printCards` function.
+- `cards.h`: Header file declaring the `Card` struct and the `printCards` function.
+
+## How to Compile and Run
+
+To compile the program, you can use a C++ compiler such as `g++`. Open a terminal/command prompt and navigate to the directory containing the source files. Then, use the following command to compile:
+
+```shell
+g++ main.cpp score.cpp cards.cpp -o blackjack
+
+This command will generate an executable file named blackjack in the current directory.
+
+After compiling the program, you can run it by executing the generated executable. Use the following command:
+./blackjack
+
+The program will start running and prompt you for input to play the game.
+
+Game Rules
+The game follows the standard rules of Blackjack:
+
+The goal is to have a hand value as close to 21 as possible without exceeding it.
+Number cards (2-10) are worth their face value, face cards (Jack, Queen, King) are worth 10, and the Ace can be worth 1 or 11.
+The player is dealt two cards initially and can choose to hit (draw another card) or stand (stop drawing cards).
+The dealer (computer) will also draw cards until their hand value reaches 17 or higher.
+If the player's hand value exceeds 21, they bust and lose the game.
+If the dealer's hand value exceeds 21, they bust and the player wins the game.
+If neither the player nor the dealer busts, the one with the higher hand value wins. A tie is also possible.
+```
